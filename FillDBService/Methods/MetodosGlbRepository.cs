@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Web;
 
-namespace FillDBService.Services
+namespace FillDBService.Methods
 {
     public class MetodosGlbRepository
     {

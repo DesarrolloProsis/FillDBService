@@ -106,6 +106,7 @@
     <Compile Include="Models\DBContext\Tramos.cs" />
     <Compile Include="Models\DBContext\Turnos.cs" />
     <Compile Include="Models\DBContext\Validaciones.cs" />
+    <Compile Include="Models\ValidacionEventos.cs" />
     <Compile Include="Service1.cs">
       <SubType>Component</SubType>
     </Compile>

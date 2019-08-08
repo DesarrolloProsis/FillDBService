@@ -1,4 +1,5 @@
-﻿using FillDBService.Methods;
+﻿using ArchivosPlanosWebV2._5.Models;
+using FillDBService.Methods;
 using FillDBService.Models.DBContext;
 using Oracle.ManagedDataAccess.Client;
 using System;
@@ -7,11 +8,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace FillDBService
 {
@@ -22,6 +25,7 @@ namespace FillDBService
         public string Notification;
         ValidacionesService validaciones = new ValidacionesService();
         FillArchivo1A Archivo1A = new FillArchivo1A();
+        MetodosGlbRepository MtGlb = new MetodosGlbRepository();
 
         public Service1()
         {
@@ -47,9 +51,13 @@ namespace FillDBService
 
         public void Prueba()
         {
+            OracleConn.ConnectionString = "User Id=GEADBA;Password=fgeuorjvne;  Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=pc001.sytes.net)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=GEAPROD)))";
+            OracleConn.Open();
+
+
             try
             {
-                Notification = "\n que onda \n hey";
+               
 
             }
             catch (Exception)
